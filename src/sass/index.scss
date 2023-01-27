@@ -1,0 +1,649 @@
+@import "nullStyle.scss";
+@import "dualRange.scss";
+@import "product.scss";
+@import "basket.scss";
+@import "modalWindows.scss";
+@import "modalBasket.scss";
+
+@font-face {
+  font-family: "owfont";
+  src: url("../assets/fonts/owfont-regular.ttf"); /* Путь к файлу со шрифтом */
+}
+
+body {
+  height: 100%;
+  background: dimgray;
+  user-select: none;
+}
+
+.btnOne {
+  cursor: pointer;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: gold;
+  font-family: sans-serif;
+  box-shadow: inset 0 -2px 3px 0 black, inset 0 2px 3px 0 white;
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+
+  &:active {
+    box-shadow: inset 0 -1px 3px 0 black, inset 0 1px 3px 0 rgb(122, 121, 121);
+    color: rgb(197, 167, 2);
+  }
+
+  &:hover{
+    color: rgb(168, 255, 55);
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    position: relative;
+    box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+    border-radius: calc((1.5em + 4px) / 2);
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+  }
+}
+
+.main__empty {
+  margin-top: 5%;
+  color: gold;
+  width: 50%;
+  height: 100px;
+  border-radius: 10px;
+  line-height: 50px;
+  font-size: 120%;
+
+  &::after {
+    top: calc(-102px);
+    border-radius: 12px;
+    padding: 0 10px;
+  }
+
+  .emptyText {
+    padding: 0 10px;
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  box-shadow: 0 0px 15px 1px black;
+  &__nav {
+    height: 75px;
+    background-color: rgb(114, 114, 114);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: inset 0 -2px 2px 0 black;
+
+    .basketPrice {
+      position: relative;
+      right: -25%;
+      height: 30px;
+      box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+      background-color: rgb(208, 180, 0);
+      border-radius: 15px;
+      padding: 0 5px;
+      font-family: sans-serif;
+      line-height: 30px;
+      font-weight: 600;
+
+      #header_price {
+        color: gold;
+        text-shadow: 1px 1px 2px black, 0 0 1em rgb(5, 5, 5),
+          0 0 0.2em rgb(8, 8, 8);
+        font-weight: 600;
+        font-size: 120%;
+      }
+    }
+
+    &-point {
+      margin: 0 15px;
+    }
+  }
+
+  .logo,
+  .baskBtn {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    box-shadow: inset 0 2px 2px 0 white, inset 0 -2px 2px 0 black;
+    // background-size: cover;
+
+    &::before {
+      position: relative;
+      top: -2px;
+      left: -2px;
+      display: block;
+      content: "";
+      width: 69px;
+      height: 69px;
+      border-radius: 50%;
+      box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+      border: 3px solid rgb(114, 114, 114);
+      animation-duration: 10s;
+      animation-name: headerBtn;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  .logo {
+    background: url("https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/logo_ simple.png"),
+      linear-gradient(gray, rgb(39, 39, 39));
+    background-size: cover;
+
+    &::before {
+      animation-delay: random($limit: 10) * 1s;
+    }
+  }
+
+  .baskBtn {
+    background: url("https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/basket_.png"),
+      linear-gradient(gray, rgb(39, 39, 39));
+    background-size: cover;
+
+    #header_items {
+      display: block;
+      width: 30px;
+      height: 20px;
+      background-color: rgb(67, 67, 67);
+      box-shadow: inset 0 0 3px 1px black;
+      border-radius: 10px;
+      position: relative;
+      top: -30%;
+      left: 40%;
+      text-align: center;
+      line-height: 20px;
+      color: gold;
+      font-size: 120%;
+      font-weight: 900;
+      text-shadow: 1px 1px 2px black, 0 0 1em rgb(5, 5, 5),
+        0 0 0.2em rgb(8, 8, 8);
+    }
+  }
+}
+
+.main {
+  height: 100%;
+  &-template {
+    display: none;
+  }
+
+  &__filter {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-panel {
+      .filtersList {
+        display: flex;
+        justify-content: space-around;
+        border-radius: 0.25em;
+        width: calc(100vw - 15px);
+
+        .filtersItem {
+          width: 23vw;
+          border-radius: 0.25em;
+          margin: 3px;
+
+          .main__price-count,
+          .main__stock-count {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            margin-top: 3px;
+          }
+
+          #search,
+          #sort,
+          #viewType {
+            width: 100%;
+            height: 1.5em;
+            border-radius: 0.75em;
+            padding-left: 5px;
+            background-color: rgb(208, 180, 0);
+            box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+            font-weight: 600;
+          }
+
+          #search {
+            height: 2em;
+          }
+
+          .filButton {
+            cursor: pointer;
+            text-align: center;
+            height: 1.5em;
+            border-radius: 0.75em;
+            padding-bottom: 1em;
+            line-height: 1.5em;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: gold;
+            font-family: sans-serif;
+            box-shadow: inset 0 -2px 3px 0 black, inset 0 2px 3px 0 white;
+
+            &:active {
+              box-shadow: inset 0 -1px 3px 0 black,
+                inset 0 1px 3px 0 rgb(122, 121, 121);
+              color: rgb(197, 167, 2);
+            }
+
+            &:hover{
+              color: rgb(168, 255, 55);
+            }
+
+            &::after {
+              display: block;
+              content: "";
+              position: relative;
+              top: calc(-1.5em - 2px);
+              left: -2px;
+              height: calc(1.5em + 4px);
+              width: calc(23vw + 4px);
+              box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+              border-radius: calc((1.5em + 4px) / 2);
+            }
+          }
+
+          #filter_by_brand,
+          #filter_by_cat {
+            width: 23vw;
+          }
+
+          .main__filter-cat-list,
+          .main__filter-brand-list {
+            position: absolute;
+            top: 18%;
+            display: block;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            height: 0px;
+            z-index: 4;
+            box-shadow: 0 0 10px 0 black, inset 0 -2px 2px 0 black,
+              inset 0 2px 2px 0 white;
+            background-color: rgb(114, 114, 114);
+            border-radius: 4px;
+
+            .checkBox:checked + label {
+              background-color: rgb(208, 180, 0);
+            }
+
+            .checkBox + label {
+              text-align: center;
+              height: 1.5em;
+              border-radius: 0.5em;
+              line-height: 1.5em;
+              margin: 5px;
+              background-color: rgb(183, 188, 190);
+              box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+            }
+
+            label {
+              display: block;
+            }
+
+            .checkBox {
+              display: none;
+            }
+          }
+
+          .hideList {
+            height: fit-content;
+            width: 100%;
+            padding: 7px 5px;
+          }
+        }
+      }
+
+      .filtersButtonSect {
+        display: flex;
+        justify-content: space-around;
+
+        .filterButton {
+          cursor: pointer;
+          text-align: center;
+          line-height: 30px;
+          width: 100px;
+          height: 30px;
+          border-radius: 15px;
+          background-color: rgba(0, 0, 0, 0.5);
+          color: gold;
+          font-family: sans-serif;
+          box-shadow: inset 0 -2px 3px 0 black, inset 0 2px 3px 0 white;
+
+          &:disabled {
+            cursor: auto;
+            opacity: 0.5;
+          }
+
+          &:hover{
+            color: rgb(168, 255, 55);
+          }
+
+          &:active {
+            box-shadow: inset 0 -1px 3px 0 black,
+              inset 0 1px 3px 0 rgb(122, 121, 121);
+            color: rgb(197, 167, 2);
+          }
+
+          &::after {
+            display: block;
+            content: "";
+            position: relative;
+            top: -32px;
+            left: -2px;
+            height: 34px;
+            width: 104px;
+            box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+            border-radius: 17px;
+          }
+        }
+
+        .main__items-sum {
+          color: gold;
+          position: relative;
+          top: -30px;
+          font-size: 1.8rem;
+          font-family: sans-serif;
+        }
+      }
+    }
+
+    &-slider {
+      position: relative;
+      // left: 2.5vw;
+      width: calc(100vw - 15px);
+      margin-top: 2vw;
+      height: 23vw;
+      background-color: rgb(50, 50, 50);
+      // box-shadow: inset 0 2px 5px black, inset 0 -2px 5px white;
+
+      &::after{
+        position: relative;
+        display: block;
+        content: "";
+        width: calc(100vw - 15px);
+        height: 23vw;
+        // background-color: #fff;
+        z-index: 3;
+        box-shadow: inset 0 2px 5px 2px black, inset 0 -2px 5px 2px white;
+      }
+
+      .container {
+        position: absolute;
+        display: flex;
+        justify-content: start;
+        width: calc(100vw - 15px);
+        height: 23vw;
+        // background-color: #fff;
+        overflow: hidden;
+        // left: 2.5vw;
+        // top: 2vw;
+
+        .part {
+          position: absolute;
+          background-color: #fff;
+          height: 23vw;
+          width: 5vw;
+          margin: 0;
+          padding: 0;
+          transform: scaleX(0);
+          transition: 0.5s;
+        }
+      }
+    }
+
+    &-body {
+      margin: 25px 0 0 0;
+      padding: 0 0 50px 0;
+      width: 100%;
+      // height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .card {
+        border-radius: 1vw;
+        width: 350px;
+        height: 450px;
+        position: relative;
+        margin: 5px;
+        cursor: pointer;
+        overflow: hidden;
+        background-color: rgb(218, 218, 218);
+        box-shadow: inset 0 -2px 2px 0 black, inset 0 2px 2px 0 white,
+          0 0 15px black;
+        transition: 500ms;
+        &:hover {
+          transform: scale(1.05) translateY(-2.5%);
+
+          .buy {
+            transform: translateX(270px);
+          }
+        }
+
+        .buy,
+        .bought {
+          position: absolute;
+          z-index: 1;
+          bottom: 20px;
+          left: -250px;
+          width: 120px;
+          height: 30px;
+          border-radius: 35px;
+          background-color: rgb(120, 119, 119);
+          color: red;
+          font-family: sans-serif;
+          font-weight: 600;
+          font-size: larger;
+          line-height: 30px;
+          transition: 500ms;
+
+          &::after {
+            top: -32px;
+            left: -2px;
+            height: 34px;
+            width: 124px;
+            border-radius: 17px;
+          }
+        }
+
+        .bought {
+          background-color: rgb(167, 167, 167);
+          color: goldenrod;
+          transform: translateX(270px);
+        }
+
+        .imgWrapper {
+          background-color: rgb(161, 161, 161);
+          width: 245px;
+          height: 245px;
+          position: relative;
+          left: 15%;
+          top: 150px;
+          border-radius: 10px;
+          box-shadow: inset 0 -2px 3px 0 black, inset 0 2px 3px 0 white;
+
+          &::after {
+            display: block;
+            content: "";
+            position: relative;
+            box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+            border-radius: calc((1.5em + 4px) / 2);
+            left: -2px;
+            top: -2px;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+          }
+
+          .cardImg {
+            border-radius: 0.5vw;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 80%;
+            z-index: 0;
+            background-size: cover;
+          }
+        }
+
+        .cardTitle {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          line-height: 2.5em;
+          white-space: nowrap;
+          width: 80%;
+          height: 2.5em;
+          position: absolute;
+          top: 5%;
+          padding-left: 3%;
+          font-family: Arial, Helvetica, sans-serif;
+          z-index: 1;
+          color: gold;
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 0 1.5em 1.5em 0;
+          box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+          text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+          font-size: 120%;
+        }
+
+        .brandName {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          color: goldenrod;
+          font-family: Arial, Helvetica, sans-serif;
+          position: absolute;
+          right: 0;
+          text-align: end;
+          top: calc(9% + 3em);
+          width: 50%;
+          height: 1.8em;
+          font-size: small;
+          line-height: 1.5em;
+          padding-right: 5%;
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 1.5em 0 0 1.5em;
+          box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+          text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+          z-index: 1;
+        }
+
+        .price {
+          position: absolute;
+          bottom: 20px;
+          right: 20px;
+          text-align: center;
+          line-height: 70px;
+          z-index: 1;
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          background-color: rgb(120, 119, 119);
+          color: gold;
+          font-family: sans-serif;
+          font-weight: 600;
+          box-shadow: inset 0 -2px 4px 0 black, inset 0 2px 2px 0 white;
+          text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+          font-size: larger;
+
+          &:active {
+            box-shadow: inset 0 -1px 3px 0 black,
+              inset 0 1px 3px 0 rgb(122, 121, 121);
+            color: rgb(194, 193, 193);
+          }
+
+          &::after {
+            display: block;
+            content: "";
+            position: relative;
+            top: -72px;
+            left: -2px;
+            height: 74px;
+            width: 74px;
+            box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+            background: linear-gradient(
+              rgba(255, 255, 255, 0),
+              rgba(0, 0, 0, 0.586)
+            );
+            border-radius: 37px;
+          }
+        }
+
+        .stock {
+          position: absolute;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  background-color: rgb(114, 114, 114);
+  box-shadow: inset 0 2px 5px 0px white, 0 0 15px 1px black;
+  width: 100%;
+  &__container {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 25px;
+
+    .year {
+      color: gold;
+      font-size: 200%;
+      font-weight: 600;
+      line-height: 50px;
+      text-shadow: 1px 1px 2px black, 0 0 1em black;
+    }
+
+    .gitLogo {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      background: url("https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/gitHubLogo_.png");
+      background-size: cover;
+    }
+
+    .rssLogo {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      background: url("https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/rssLogo_.png");
+      background-size: cover;
+    }
+  }
+  z-index: 5;
+}
+
+@keyframes headerBtn {
+  from {
+    box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white,
+      0 0 1px 1px rgb(114, 114, 114);
+  }
+  to {
+    box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white,
+      0 0 1px 1px rgb(114, 114, 114);
+  }
+  55%,
+  70%,
+  85% {
+    box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white,
+      0 0 1px 1px orange;
+  }
+  63%,
+  78%,
+  93% {
+    box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white,
+      0 0 10px 1px orange;
+  }
+}
+
+@import "viewList.scss";
+@import "page404.scss";

@@ -1,0 +1,206 @@
+.product {
+  margin-top: 15vh;
+  padding-left: 0;
+  height: 60vh;
+}
+
+.breadcrumb{
+  display: flex;
+  margin-left: 20px;
+
+  
+
+  .breadcrumb-item{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gold;
+    padding: 5px;
+    margin-right: 10px;
+    background-color: rgb(124, 31, 31);
+    border: 1px solid gold;
+    box-shadow: inset 0 0 3px 0px black;
+    background: rgb(66, 66, 66);
+    border-radius: 4px;
+
+    a{
+      color: aliceblue;
+      text-decoration: none;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  }
+}
+
+.mainProdCont{
+  display: flex;
+  margin-top: 20px;
+}
+
+.leftSect {
+  display: flex;
+  width: 55%;
+  //   background-color: #fff;
+
+  .product-images {
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+
+    .miniature {
+      width: 5vw;
+      margin: 5px 0px;
+      border: 1px solid gold;
+    }
+  }
+
+  .product-thumbnail {
+    margin-left: 10px;
+    object-fit: contain;
+    width: 55vw;
+    height: 70vh;
+    background-size: cover;
+    border: 2px solid gold;
+    box-shadow: inset 0 0 5px 0px black;
+    background: rgb(66, 66, 66);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+
+.rightSect {
+  margin-top: 4vh;
+  color: aliceblue;
+  width: 42%;
+  padding-left: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  .titleSect {
+    width: 100%;
+    border: 1px solid gold;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px 0px black;
+    background: rgb(66, 66, 66);
+
+    .product-title {
+      font-size: 200%;
+      color: gold;
+      text-align: center;
+      margin: 5px 0px;
+    }
+
+    .product-brand {
+      color: gold;
+      text-align: center;
+      margin: 5px 0px;
+    }
+  }
+
+  .buySect {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gold;
+    border-radius: 5px;
+    // height: 15%;
+    box-shadow: inset 0 0 5px 0px black;
+    background: rgb(66, 66, 66);
+    padding: 5px;
+
+    .buyButton {
+      margin-right: 3%;
+      width: 30%;
+      height: 2.2em;
+      text-align: center;
+      line-height: 2.2em;
+      font-size: 150%;
+      font-weight: 400;
+      border-radius: 1.1em;
+      background: rgb(66, 66, 66);
+
+      &::after{
+        border-radius: calc((2.2em + 4px)/2);
+        top: calc(-2.2em - 2px);
+      }
+    }
+
+    .btnOff{
+      color: rgb(250, 239, 178);
+    }
+
+    .priceSect {
+      margin-left: 3%;
+      width: 40%;
+      font-size: 150%;
+      font-weight: 600;
+      text-shadow: 0px 0px 1px black, 0 0 0.1em rgb(8, 8, 8);
+
+      .product-price {
+        margin-top: 5px;
+        color: red;
+        text-shadow: 1px 1px 2px black, 0 0 1em rgb(5, 5, 5),
+          0 0 0.2em rgb(8, 8, 8);
+      }
+
+      .oldPrice {
+        margin-top: 5px;
+        text-decoration: line-through;
+        color: darkgray;
+      }
+    }
+  }
+
+  .product-description {
+    border: 1px solid gold;
+    box-shadow: inset 0 0 5px 0px black;
+    background: rgb(66, 66, 66);
+
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    line-height: 120%;
+  }
+
+  .stars {
+    font-size: 300%;
+    color: gold;
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(5, 5, 5), 0 0 0.2em rgb(8, 8, 8);
+  }
+
+  .product-rating {
+    font-size: 200%;
+    color: gold;
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(5, 5, 5), 0 0 0.2em rgb(8, 8, 8);
+  }
+
+  .product-stock {
+    margin-top: 10px;
+    padding: 5px 0px;
+    text-align: center;
+    border: 1px solid gold;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px 0px black;
+    background: rgb(66, 66, 66);
+  }
+
+  .fastBuy{
+    position: relative;
+    left: 30%;
+    width: 70%;
+    margin-top: 30px;
+    padding: 10px 10px;
+    text-align: center;
+    border: 1px solid gold;
+    border-radius: 14px;
+    box-shadow: inset 0 0 5px 0px black;
+    background: rgb(66, 66, 66);
+    color: gold;
+    font-size: 200%;
+    text-shadow: 0px 0px 1px black, 0 0 0.1em rgb(8, 8, 8);
+  }
+}
+
+.product-id {
+  display: none;
+}

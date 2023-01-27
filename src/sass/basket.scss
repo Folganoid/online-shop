@@ -1,0 +1,401 @@
+.basket {
+  margin-top: 10vh;
+  display: flex;
+  padding-left: 0;
+  height: 60vh;
+  display: flex;
+
+  .emptyBasket {
+    position: relative;
+    left: 25%;
+    top: 10%;
+    margin-top: 5%;
+    color: gold;
+    width: 50%;
+    height: 100px;
+    border-radius: 10px;
+    line-height: 100px;
+    font-size: 120%;
+
+    &::after {
+      top: calc(-102px);
+      border-radius: 12px;
+      padding: 0 10px;
+    }
+  }
+
+  button {
+    height: 30px;
+    width: 100px;
+    margin: 0 10px;
+  }
+
+  article {
+    width: 100%;
+
+    .basket__panel {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center;
+      height: 100px;
+
+      .basket__page {
+        display: flex;
+        flex-direction: column;
+
+        #basket_limit {
+          width: 180px;
+          height: 2em;
+          border-radius: 1em;
+          padding-left: 5px;
+          margin: 5px 0;
+          background-color: rgb(208, 180, 0);
+          box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+          font-weight: 600;
+        }
+
+        .basket__page-control {
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: center;
+          width: 180px;
+          padding: 0;
+          margin: 5px 0;
+
+          .basket__page-index {
+            color: gold;
+            font-weight: 600;
+            text-shadow: 1px 1px 2px black, 0 0 1em black;
+          }
+
+          #basket_page_prev,
+          #basket_page_next {
+            margin: 0;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 15px;
+
+            &::after {
+              border-radius: 17px;
+              top: -32px;
+            }
+          }
+        }
+      }
+
+      .basket__prices {
+        display: flex;
+        flex-direction: column;
+        color: aliceblue;
+        font-weight: 900;
+        font-size: 1.8rem;
+        font-family: sans-serif;
+
+        span {
+          font-size: 2.8rem;
+          color: red;
+          text-shadow: 1px 1px 2px black, 0 0 1em rgb(5, 5, 5),
+            0 0 0.2em rgb(8, 8, 8);
+        }
+
+        .cross {
+          color: lightgrey;
+          font-weight: 100;
+          span {
+            text-decoration: line-through;
+            color: lightgrey;
+            text-shadow: none;
+          }
+          b {
+            display: none;
+          }
+        }
+        .hide {
+          display: none;
+        }
+      }
+
+      .basket__disc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .basket__disc-add {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          #basket_disc_input {
+            width: 105%;
+            height: 2em;
+            border-radius: 1em;
+            padding-left: 5px;
+            margin: 5px;
+            background-color: rgb(208, 180, 0);
+            box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+            font-weight: 600;
+          }
+          #basket_add_disc {
+            width: 100%;
+            height: 30px;
+            border-radius: 15px;
+            margin: 5px;
+            line-height: 30px;
+
+            &::after {
+              border-radius: 17px;
+              top: -32px;
+            }
+          }
+        }
+
+        #basket_discount_list {
+          width: 150px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: flex-start;
+          margin: 5px;
+
+          .basket__discount {
+            color: aliceblue;
+            width: 150px;
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+
+            span {
+              font-weight: 900;
+              font-size: 1.5rem;
+              color: red;
+              text-shadow: 1px 1px 2px black, 0 0 1em rgb(5, 5, 5),
+                0 0 0.2em rgb(8, 8, 8);
+            }
+
+            button {
+              width: 20px;
+              height: 20px;
+              border-radius: 15px;
+              color: aliceblue;
+              background: rgb(66, 66, 66);
+              font-family: Arial, Helvetica, sans-serif;
+            }
+          }
+        }
+      }
+
+      .basket__control_btns {
+        display: flex;
+        flex-direction: column;
+
+        #basket_page_reset {
+          width: 150px;
+          height: 30px;
+          border-radius: 15px;
+          margin: 5px 0;
+          line-height: 30px;
+
+          &::after {
+            border-radius: 17px;
+            top: -32px;
+          }
+        }
+
+        #basket_send {
+          width: 150px;
+          height: 30px;
+          border-radius: 15px;
+          margin: 5px 0;
+          line-height: 30px;
+
+          &::after {
+            border-radius: 17px;
+            top: -32px;
+          }
+        }
+      }
+    }
+    .basket__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 60px;
+
+      .basket__card {
+        border-radius: 1vw;
+        width: 1000px;
+        height: 160px;
+        position: relative;
+        margin: 10px;
+        cursor: pointer;
+        overflow: hidden;
+        background-color: rgb(236, 236, 236);
+        box-shadow: 0 0 15px black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+
+        .basket__card-num {
+          width: 2%;
+          font-weight: 900;
+          font-size: 2rem;
+          margin: 20px;
+        }
+
+        .basket__card-desc {
+          width: 78%;
+          display: flex;
+
+          .imgBaskWrap {
+            flex: 1 1 auto;
+            background-color: rgb(161, 161, 161);
+            width: 200px;
+            height: 140px;
+            position: relative;
+            left: -1%;
+            top: 2px;
+            border-radius: 10px;
+            box-shadow: inset 0 -2px 3px 0 black, inset 0 2px 3px 0 white;
+
+            &::after {
+              display: block;
+              content: "";
+              position: relative;
+              box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+              border-radius: calc((1.5em + 4px) / 2);
+              left: -2px;
+              top: -2px;
+              width: calc(100% + 4px);
+              height: calc(100% + 4px);
+            }
+
+            .basket__card-img {
+              border-radius: 0.5vw;
+              position: absolute;
+              top: 0%;
+              left: 15%;
+              height: 100%;
+              z-index: 0;
+              background-size: cover;
+            }
+          }
+
+          .basket__card-info {
+            // width: 50%;
+            // max-width: 50%;
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 500px;
+
+            p {
+              margin-top: 4px;
+            }
+
+            .basket__card-title {
+              width: 520px;
+              font-size: 1.6rem;
+              padding: 5px 20px;
+              border-radius: 20px;
+              overflow: hidden;
+              white-space: nowrap;
+              font-family: Arial, Helvetica, sans-serif;
+              color: gold;
+              background-color: rgba(0, 0, 0, 0.5);
+              box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+              text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+            }
+
+            .basket__card-des {
+              width: 520px;
+              box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+              border-radius: 5px;
+              padding: 5px;
+              background-color: rgba(0, 0, 0, 0.5);
+              color: antiquewhite;
+              text-shadow: 1px 1px 2px black, 0 0 1em black;
+
+              .basket__card-description {
+                color: goldenrod;
+                text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+              }
+            }
+
+            .stars {
+              color: gold;
+              text-shadow: 1px 1px 2px #000, 0 0 1em #050505, 0 0 0.2em #080808;
+            }
+          }
+        }
+
+        .basket__card-counter {
+          width: 20%;
+          flex: 1 1 auto;
+          display: flex;
+          flex-direction: column;
+          justify-items: center;
+          align-items: center;
+          position: relative;
+          align-self: center;
+
+          .basket__card-remove {
+            position: absolute;
+            top: -17px;
+            right: -5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            font-weight: 900;
+            font-size: 0.7rem;
+            color: aliceblue;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: sans-serif;
+            box-shadow: inset 0 -2px 3px 0 black, inset 0 2px 3px 0 white;
+            text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+          }
+
+          .basket__card-stock {
+            font-weight: 600;
+          }
+
+          .basket__card-count {
+            display: flex;
+            margin: 10px 0;
+
+            .basket__card-count-total {
+              font-size: 2.5rem;
+            }
+
+            .basket__card-count-low,
+            .basket__card-count-up {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              color: aliceblue;
+              font-size: 2rem;
+              cursor: pointer;
+              line-height: 40px;
+              text-align: center;
+              background-color: rgba(0, 0, 0, 0.5);
+              font-family: sans-serif;
+              box-shadow: inset 0 -2px 3px 0 black, inset 0 2px 3px 0 white;
+              text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+            }
+          }
+          .basket__card-price {
+            b {
+              font-size: 2rem;
+              color: gold;
+              text-shadow: 1px 1px 4px black, 0 0 1em rgb(5, 5, 5),
+                0 0 0.2em rgb(8, 8, 8);
+            }
+          }
+        }
+      }
+    }
+  }
+}

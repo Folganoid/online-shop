@@ -1,0 +1,843 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Royal Canin Mini Adult",
+            "description": "Complete nutritional balanced dry food for small dogs (adult dog weight up to 10 kg) from 10 months to 8 years",
+            "price": 225,
+            "discountPercentage": 15,
+            "rating": 4.8,
+            "stock": 94,
+            "brand": "Royal Canin",
+            "category": "Food for dogs",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/1a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/1a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/1b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/1c.png"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Club 4 Paws Adult Medium Breeds",
+            "description": "Complete dry food for adult dogs of medium breeds",
+            "price": 306,
+            "discountPercentage": 0,
+            "rating": 4.44,
+            "stock": 34,
+            "brand": "Club 4 Paws",
+            "category": "Food for dogs",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/2a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/2a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/2b.png"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Savory for large breed",
+            "description": "Dry food for puppies of large breeds Savory 12 kg (turkey and chicken)",
+            "price": 2280,
+            "discountPercentage": 20,
+            "rating": 4.9,
+            "stock": 36,
+            "brand": "Savory",
+            "category": "Food for dogs",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/3a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/3a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/3b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/3c.png"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Brit Care Adult Medium Breed Lamb and Rice    ",
+            "description": "Gift set of food for adult dogs of medium breeds Brit Care Adult Medium Breed Lamb and Rice, 3 kg + 2 cans",
+            "price": 700,
+            "discountPercentage": 0,
+            "rating": 4.8,
+            "stock": 123,
+            "brand": "Brit Care",
+            "category": "Food for dogs",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/4a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/4a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/4b.png"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Optimeal chicken dry food",
+            "description": "Dry food for adult cats Optimeal 4 kg (chicken)",
+            "price": 1059,
+            "discountPercentage": 5.4,
+            "rating": 4.09,
+            "stock": 32,
+            "brand": "Optimeal",
+            "category": "Food for cats",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/5a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/5a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/5b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/5c.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/5d.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/5e.png"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Optimeal Beauty Harmony",
+            "description": "Wet food for cats Optimeal Beauty Harmony 70 g (tuna)",
+            "price": 55,
+            "discountPercentage": 5,
+            "rating": 4.57,
+            "stock": 83,
+            "brand": "Optimeal",
+            "category": "Food for cats",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/6a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/6a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/6b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/6c.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/6d.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/6e.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/6f.png"
+            ]
+        },
+        {
+            "id": 7,
+            "title": "Acana Puppy & Junior",
+            "description": "Dry food for puppies and young dogs of medium breeds Acana Puppy & Junior 2 kg",
+            "price": 1323,
+            "discountPercentage": 3.15,
+            "rating": 4.25,
+            "stock": 50,
+            "brand": "Acana",
+            "category": "Food for dogs",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/7a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/7a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/7b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/7c.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/7d.png"
+            ]
+        },
+        {
+            "id": 8,
+            "title": "Club 4 Paws Premium Urinary",
+            "description": "Dry food for cats with diseases of the urinary tract Club 4 Paws Premium Urinary 900 g (chicken)",
+            "price": 153,
+            "discountPercentage": 10.23,
+            "rating": 4.43,
+            "stock": 68,
+            "brand": "Club 4 Paws",
+            "category": "Food for cats",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/8a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/8a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/8b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/8c.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/8d.png"
+            ]
+        },
+        {
+            "id": 9,
+            "title": "Pro Plan Sterilised Salmon",
+            "description": "Dry food for sterilized cats Pro Plan Sterilized Salmon 1.5 kg (salmon)",
+            "price": 476,
+            "discountPercentage": 11.83,
+            "rating": 4.84,
+            "stock": 96,
+            "brand": "Pro Plan",
+            "category": "Food for cats",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/9a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/9a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/9b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/9c.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/9d.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/9e.png"
+            ]
+        },
+        {
+            "id": 10,
+            "title": "Trixie Rotolinis",
+            "description": "Treats for dogs Trixie Rotolinis 120 g (tripe)",
+            "price": 55,
+            "discountPercentage": 9,
+            "rating": 4.43,
+            "stock": 89,
+            "brand": "Trixie",
+            "category": "Food for dogs",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/10a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/10a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/10b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/10c.png"
+            ]
+        },
+        {
+            "id": 11,
+            "title": "Constanta",
+            "description": "Carrier bag for dogs and cats Priroda 'Constanta' 40 x 28 x 28 cm (burgundy)",
+            "price": 988,
+            "discountPercentage": 5,
+            "rating": 4.26,
+            "stock": 65,
+            "brand": "Priroda",
+            "category": "Accessories",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/11a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/11a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/11b.png"
+            ]
+        },
+        {
+            "id": 12,
+            "title": "Special One for rabbits",
+            "description": "Feed for rabbits Special One 500g",
+            "price": 141,
+            "discountPercentage": 15.66,
+            "rating": 4,
+            "stock": 52,
+            "brand": "Special One",
+            "category": "Food for rodens",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/12a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/12a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/12b.png"
+            ]
+        },
+        {
+            "id": 13,
+            "title": "Advantage",
+            "description": "Drops on the withers for cats and rabbits Bayer 'Advantage' (Advantage) up to 4 kg, 4 pipettes (from external parasites)",
+            "price": 525,
+            "discountPercentage": 8.14,
+            "rating": 4.59,
+            "stock": 61,
+            "brand": "Bayer",
+            "category": "Medicines",
+            "thumbnail":"https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/13a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/13a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/13b.png"
+            ]
+        },
+        {
+            "id": 14,
+            "title": "Royal Canin Hypoallergenic",
+            "description": "Dry food for dogs with food allergies Royal Canin Hypoallergenic 2 kg (poultry)",
+            "price": 730,
+            "discountPercentage": 15.6,
+            "rating": 4.21,
+            "stock": 114,
+            "brand": "Royal Canin",
+            "category": "Food for dogs",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/14a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/14a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/14b.png"
+            ]
+        },
+        {
+            "id": 15,
+            "title": "Royal Canin X-Small Adult",
+            "description": "Dry food for adult dogs of small breeds Royal Canin X-Small Adult 3 kg (poultry)",
+            "price": 870,
+            "discountPercentage": 10.99,
+            "rating": 4.7,
+            "stock": 105,
+            "brand": "Royal Canin",
+            "category": "Food for dogs",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/15a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/15a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/15b.png"
+            ]
+        },
+        {
+            "id": 16,
+            "title": "Savory Lamb",
+            "description": "Wet food for sterilized cats Savory 200 g (lamb)",
+            "price": 76,
+            "discountPercentage": 13.31,
+            "rating": 4.83,
+            "stock": 110,
+            "brand": "Savory",
+            "category": "Food for cats",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/16a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/16a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/16b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/16c.png"
+            ]
+        },
+        {
+            "id": 17,
+            "title": "Special One for chinchillas",
+            "description": "Food for chinchillas Special One 500 g",
+            "price": 133,
+            "discountPercentage": 4.09,
+            "rating": 4.52,
+            "stock": 78,
+            "brand": "Special One",
+            "category": "Food for rodens",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/17a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/17a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/17b.png"
+            ]
+        },
+        {
+            "id": 18,
+            "title": "Pellets",
+            "description": "Feed for rabbits Vitakraft 'Pellets' 1 kg",
+            "price": 200,
+            "discountPercentage": 13.1,
+            "rating": 4.56,
+            "stock": 88,
+            "brand": "Vitakraft",
+            "category": "Food for rodens",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/18a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/18a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/18b.png"
+            ]
+        },
+        {
+            "id": 19,
+            "title": "Premium Menu Vital",
+            "description": "Feed for guinea pigs Vitakraft 'Premium Menu Vital' 1 kg",
+            "price": 215,
+            "discountPercentage": 10.68,
+            "rating": 4.42,
+            "stock": 54,
+            "brand": "Vitakraft",
+            "category": "Food for rodens",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/19a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/19a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/19b.png"
+            ]
+        },
+        {
+            "id": 20,
+            "title": "Ration",
+            "description": "Food for chinchillas Priroda 'Ration' 1.5 kg",
+            "price": 124,
+            "discountPercentage": 16.99,
+            "rating": 4.06,
+            "stock": 140,
+            "brand": "Priroda",
+            "category": "Food for rodens",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/20a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/20a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/20b.png"
+            ]
+        },
+        {
+            "id": 21,
+            "title": "Pro Plan Duo Delice",
+            "description": "Dry dog food Pro Plan Duo Delice 2.5 kg (beef)",
+            "price": 573,
+            "discountPercentage": 25,
+            "rating": 4.3,
+            "stock": 64,
+            "brand": "Pro Plan",
+            "category": "Food for dogs",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/21a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/21a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/21b.png"
+            ]
+        },
+        {
+            "id": 22,
+            "title": "Pro Plan Puppy Small & Mini",
+            "description": "Dry food for puppies and young dogs of small breeds Pro Plan Puppy Small & Mini 700 g (chicken)",
+            "price": 155,
+            "discountPercentage": 0,
+            "rating": 4.46,
+            "stock": 34,
+            "brand": "Pro Plan",
+            "category": "Food for dogs",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/22a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/22a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/22b.png"
+            ]
+        },
+        {
+            "id": 23,
+            "title": "Pro Plan Adult Small & Mini",
+            "description": "Dry food for adult dogs of small breeds Pro Plan Adult Small & Mini 3 kg (chicken)",
+            "price": 605,
+            "discountPercentage": 10,
+            "rating": 4.4,
+            "stock": 36,
+            "brand": "Pro Plan",
+            "category": "Food for dogs",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/23a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/23a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/23b.png"
+            ]
+        },
+        {
+            "id": 24,
+            "title": "Pro Plan Adult Small & Mini Sensitive Digestion",
+            "description": "Dry food for adult dogs of small breeds with sensitive digestion Pro Plan Adult Small & Mini Sensitive Digestion 7 kg (salmon)",
+            "price": 1388,
+            "discountPercentage": 0,
+            "rating": 4.7,
+            "stock": 23,
+            "brand": "Pro Plan",
+            "category": "Food for dogs",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/24a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/24a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/24b.png"
+            ]
+        },
+        {
+            "id": 25,
+            "title": "Club 4 Paws Lamb and Rice",
+            "description": "Dry food for dogs of all breeds Club 4 Paws Premium 14 kg (lamb and rice)",
+            "price": 1697,
+            "discountPercentage": 5.4,
+            "rating": 4.79,
+            "stock": 32,
+            "brand": "Club 4 Paws",
+            "category": "Food for dogs",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/25a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/25a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/25b.png"
+            ]
+        },
+        {
+            "id": 26,
+            "title": "Club 4 Paws Medium",
+            "description": "Dry food for dogs of medium breeds Club 4 Paws Premium 14 kg (chicken)",
+            "price": 1293,
+            "discountPercentage": 5,
+            "rating": 4.67,
+            "stock": 83,
+            "brand": "Club 4 Paws",
+            "category": "Food for dogs",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/26a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/26a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/26b.png"
+            ]
+        },
+        {
+            "id": 27,
+            "title": "Club 4 Paws puppies of all breeds",
+            "description": "Dry food for puppies of all breeds Club 4 Paws Premium 2 kg (chicken)",
+            "price": 302,
+            "discountPercentage": 3.15,
+            "rating": 4.25,
+            "stock": 50,
+            "brand": "Club 4 Paws",
+            "category": "Food for dogs",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/27a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/27a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/27b.png"
+            ]
+        },
+        {
+            "id": 28,
+            "title": "Club 4 Paws Hairball",
+            "description": "Dry food for cats with the effect of removing wool Club 4 Paws Premium 2 kg (chicken)",
+            "price": 332,
+            "discountPercentage": 8,
+            "rating": 4.43,
+            "stock": 38,
+            "brand": "Club 4 Paws",
+            "category": "Food for cats",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/28a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/28a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/28b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/28c.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/28d.png"
+            ]
+        },
+        {
+            "id": 29,
+            "title": "Club 4 Paws Indoor",
+            "description": "Dry food for adult cats Club 4 Paws Premium Indoor 4 in 1, 14 kg (chicken)",
+            "price": 2127,
+            "discountPercentage": 7,
+            "rating": 4.84,
+            "stock": 96,
+            "brand": "Club 4 Paws",
+            "category": "Food for cats",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/29a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/29a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/29b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/29c.png"
+            ]
+        },
+        {
+            "id": 30,
+            "title": "Club 4 Paws Sensitive Digestion",
+            "description": "Dry food for cats with sensitive digestion Club 4 Paws Premium 14 kg (chicken)",
+            "price": 2127,
+            "discountPercentage": 9,
+            "rating": 4.43,
+            "stock": 89,
+            "brand": "Club 4 Paws",
+            "category": "Food for cats",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/30a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/30a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/30b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/30c.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/30d.png"
+            ]
+        },
+        {
+            "id": 31,
+            "title": "Club 4 Paws Kitten",
+            "description": "Wet food for kittens Club 4 Paws Premium 80 g (chicken)",
+            "price": 13,
+            "discountPercentage": 5,
+            "rating": 4.26,
+            "stock": 890,
+            "brand": "Club 4 Paws",
+            "category": "Food for cats",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/31a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/31a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/31b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/31c.png"
+            ]
+        },
+        {
+            "id": 32,
+            "title": "Royal Canin Hair & Skin",
+            "description": "Dry food for cats whose fur requires additional care Royal Canin Hair & Skin 2 kg (poultry)",
+            "price": 840,
+            "discountPercentage": 15.66,
+            "rating": 4,
+            "stock": 52,
+            "brand": "Royal Canin",
+            "category": "Food for cats",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/32a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/32a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/32b.png"
+            ]
+        },
+        {
+            "id": 33,
+            "title": "Royal Canin Hepatic",
+            "description": "Dry cat food for liver diseases Royal Canin Hepatic 2 kg (poultry)",
+            "price": 1099,
+            "discountPercentage": 8.14,
+            "rating": 4.59,
+            "stock": 61,
+            "brand": "Royal Canin",
+            "category": "Food for cats",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/33a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/33a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/33b.png"
+            ]
+        },
+        {
+            "id": 34,
+            "title": "Royal Canin Gastro Intestinal",
+            "description": "Dry food for cats, with diseases of the gastrointestinal tract Royal Canin Gastro Intestinal 2 kg (poultry)",
+            "price": 908,
+            "discountPercentage": 15.6,
+            "rating": 4.21,
+            "stock": 114,
+            "brand": "Royal Canin",
+            "category": "Food for cats",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/34a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/34a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/34b.png"
+            ]
+        },
+        {
+            "id": 35,
+            "title": "Pro Plan Original Kitten",
+            "description": "Dry food for kittens Pro Plan Original Kitten Chicken 400 g (chicken)",
+            "price": 113,
+            "discountPercentage": 10.99,
+            "rating": 4.7,
+            "stock": 105,
+            "brand": "Pro Plan",
+            "category": "Food for cats",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/35a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/35a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/35b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/35c.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/35d.png"
+            ]
+        },
+        {
+            "id": 36,
+            "title": "Pro Plan Senior 7+",
+            "description": "Wet food for adult cats over 7 years ProPlan Senior 7+, 85 g (tuna)",
+            "price": 39,
+            "discountPercentage": 13.31,
+            "rating": 4.83,
+            "stock": 110,
+            "brand": "Pro Plan",
+            "category": "Food for cats",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/36a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/36a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/36b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/36c.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/36d.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/36e.png"
+            ]
+        },
+        {
+            "id": 37,
+            "title": "Savory chicken",
+            "description": "Wet food for sterilized cats Savory 400 g (chicken)",
+            "price": 119,
+            "discountPercentage": 43.5,
+            "rating": 4.78,
+            "stock": 78,
+            "brand": "Savory",
+            "category": "Food for cats",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/37a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/37a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/37b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/37c.png"
+            ]
+        },
+        {
+            "id": 38,
+            "title": "Fiesta 'Rabbit'",
+            "description": "Feed for rabbits Priroda Fiesta 'Rabbit' 600 g",
+            "price": 74,
+            "discountPercentage": 13.1,
+            "rating": 4.56,
+            "stock": 88,
+            "brand": "Priroda",
+            "category": "Food for rodens",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/38a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/38a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/38b.png"
+            ]
+        },
+        {
+            "id": 39,
+            "title": "Cocktail 'Guinea pig",
+            "description": "Feed for guinea pigs Priroda Cocktail 'Guinea pig' 500 g",
+            "price": 91,
+            "discountPercentage": 10.68,
+            "rating": 4.42,
+            "stock": 54,
+            "brand": "Priroda",
+            "category": "Food for rodens",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/39a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/39a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/39b.png"
+            ]
+        },
+        {
+            "id": 40,
+            "title": "'Granules'",
+            "description": "Feed for all types of rodents Priroda 'Granules' 500 g",
+            "price": 69,
+            "discountPercentage": 15,
+            "rating": 4.06,
+            "stock": 120,
+            "brand": "Priroda",
+            "category": "Food for rodens",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/40a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/40a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/40b.png"
+            ]
+        },
+        {
+            "id": 41,
+            "title": "Special One for guinea pigs",
+            "description": "Feed for guinea pigs Special One 500 g",
+            "price": 134,
+            "discountPercentage": 15,
+            "rating": 4.8,
+            "stock": 94,
+            "brand": "Special One",
+            "category": "Food for rodens",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/41a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/41a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/41b.png"
+            ]
+        },
+        {
+            "id": 42,
+            "title": "Premium Menu Vital",
+            "description": "Food for rats Vitakraft 'Premium Menu Vital' 800 g",
+            "price": 269,
+            "discountPercentage": 0,
+            "rating": 4.44,
+            "stock": 34,
+            "brand": "Vitakraft",
+            "category": "Food for rodens",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/42a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/42a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/42b.png"
+            ]
+        },
+        {
+            "id": 43,
+            "title": "FORTIFLORA",
+            "description": "Probiotic for dogs ProPlan FORTIFLORA support of microflora of the gastrointestinal tract, 7 pcs x 1g",
+            "price": 144,
+            "discountPercentage": 20,
+            "rating": 4.9,
+            "stock": 36,
+            "brand": "Pro Plan",
+            "category": "Medicines",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/43a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/43a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/43b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/43c.png"
+            ]
+        },
+        {
+            "id": 44,
+            "title": "Collar STOP-Bio",
+            "description": "Collar for dogs ProVET 'STOP-Bio' 70 cm (against external parasites)",
+            "price": 54,
+            "discountPercentage": 0,
+            "rating": 4.8,
+            "stock": 123,
+            "brand": "ProVET",
+            "category": "Medicines",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/44a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/44a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/44b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/44c.png"
+            ]
+        },
+        {
+            "id": 45,
+            "title": "Mykostop",
+            "description": "Drops for cats and dogs for external use ProVET 'Mykostop' 10 ml (antifungal drug)",
+            "price": 44,
+            "discountPercentage": 5.4,
+            "rating": 4.09,
+            "stock": 332,
+            "brand": "ProVET",
+            "category": "Medicines",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/45a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/45a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/45b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/45c.png"
+            ]
+        },
+        {
+            "id": 46,
+            "title": "Bolfo",
+            "description": "Collar for cats and dogs Bayer 'Bolfo' 35 cm (against external parasites)",
+            "price": 321,
+            "discountPercentage": 5,
+            "rating": 4.57,
+            "stock": 83,
+            "brand": "Bayer",
+            "category": "Medicines",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/46a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/46a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/46b.png"
+            ]
+        },
+        {
+            "id": 47,
+            "title": "Toilet Mio",
+            "description": "Toilet for cats Trixie with a rim 'Mio' 32 x 12 x 43 cm (plastic, various colors)",
+            "price": 333,
+            "discountPercentage": 3.15,
+            "rating": 4.25,
+            "stock": 50,
+            "brand": "Trixie",
+            "category": "Accessories",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/47a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/47a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/47b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/47c.png"
+            ]
+        },
+        {
+            "id": 48,
+            "title": "Malaga",
+            "description": "Trixie 'Malaga' scratching post (black)",
+            "price": 7788,
+            "discountPercentage": 10.23,
+            "rating": 4.43,
+            "stock": 68,
+            "brand": "Trixie",
+            "category": "Accessories",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/48a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/48a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/48b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/48c.png"
+            ]
+        },
+        {
+            "id": 49,
+            "title": "Game tunnel",
+            "description": "Toy for cats Trixie Game tunnel d=25 cm / 50 cm (polyester, colors in assortment)",
+            "price": 388,
+            "discountPercentage": 11.83,
+            "rating": 4.84,
+            "stock": 96,
+            "brand": "Trixie",
+            "category": "Accessories",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/49a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/49a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/49b.png"
+            ]
+        },
+        {
+            "id": 50,
+            "title": "Ceramic Bowl",
+            "description": "Trixie ceramic bowl 200 ml / 13 cm (gray, blue, pink)",
+            "price": 188,
+            "discountPercentage": 9,
+            "rating": 4.43,
+            "stock": 89,
+            "brand": "Trixie",
+            "category": "Accessories",
+            "thumbnail": "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/50a.png",
+            "images": [
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/50a.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/50b.png",
+                "https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/50c.png"
+            ]
+        }
+    ],
+    "total": 50,
+    "skip": 0,
+    "limit": 50
+}

@@ -1,0 +1,281 @@
+.basket__modal {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(92, 71, 16, 0.653);
+  width: 100%;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 100;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    appearance: textfield;
+  }
+
+  .basket__modal-form {
+    width: 800px;
+    height: 600px;
+    background-color: #989797;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 -2px 3px 0 black, inset 0 2px 3px 0 white;
+    z-index: 120;
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+      border-radius: calc((1.5em + 4px) / 2);
+      top: calc((100vh - 604px) / 2);
+      left: calc((100vw - 820px) / 2);
+      width: 804px;
+      height: 604px;
+    }
+
+    .invalid {
+      width: 40px;
+      text-shadow: 1px 1px 2px black, 0 0 1em rgb(5, 5, 5),
+        0 0 0.2em rgb(8, 8, 8);
+      font-weight: 900;
+      color: red;
+      &::after {
+        margin-left: 10px;
+        content: "✗";
+      }
+    }
+
+    .valid {
+      width: 40px;
+      color: lime;
+      text-shadow: 1px 1px 2px black, 0 0 1em rgb(5, 5, 5),
+        0 0 0.2em rgb(8, 8, 8);
+      font-weight: 900;
+      &::after {
+        margin-left: 10px;
+        content: "✓";
+      }
+    }
+
+    h4 {
+      margin-top: 10px;
+      font-size: 2.6rem;
+      color: goldenrod;
+    }
+
+    .basket__modal-pers {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      margin-top: -10px;
+
+      .basket__modal-pers-list {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        input {
+          position: relative;
+          border-radius: 1em;
+          padding-left: 10px;
+          width: 402px;
+          height: 2em;
+          margin: 0px 5px 5px 31px;
+          font-size: 16px;
+          color: #000;
+          background-color: rgb(208, 180, 0);
+          box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+          font-weight: 600;
+          z-index: 121;
+
+          &::placeholder {
+            color: rgb(52, 51, 51);
+          }
+        }
+      }
+    }
+
+    .creditCardBlock {
+      position: relative;
+      width: 480px;
+      height: 280px;
+      margin-top: -10px;
+
+      .cardBack {
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 480px;
+        height: 280px;
+        background-color: rgb(110, 26, 26);
+        background: url("https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/card.jpg");
+        z-index: 102;
+        transform: perspective(600px) rotateY(0deg);
+        transition: transform 0.6s linear;
+        box-shadow: 0 0 10px 2px #000;
+        border-radius: 10px;
+        z-index: 102;
+      }
+
+      .basket__modal-creditcard {
+        backface-visibility: hidden;
+        width: 480px;
+        height: 280px;
+        background-image: url("../media/image/creditcard.png");
+        position: absolute;
+        // box-shadow: 0 0 10px 2px black;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: transform 0.6s linear;
+        transform: perspective(600px) rotateY(180deg);
+        box-shadow: 0 0 10px 2px black;
+        z-index: 102;
+
+        .basket__modal-card-logo {
+          position: absolute;
+          top: 10px;
+          right: 20px;
+          img {
+            max-height: 70px;
+            border-radius: 5px;
+            border: 1px solid grey;
+          }
+          .hide {
+            display: none;
+          }
+        }
+
+        .basket__modal-creditcard-num {
+          display: flex;
+          align-items: center;
+          flex-wrap: nowrap;
+          position: absolute;
+          top: 145px;
+          left: 20px;
+          color: gray;
+
+          input {
+            width: 81px;
+            color: grey;
+            height: 35px;
+            font-size: 30px;
+            border-radius: 5px;
+            padding-left: 5px;
+            margin: 5px 8px;
+            background-color: #ececec;
+          }
+          input::placeholder {
+            color: lightgray;
+            padding: 30px 5px;
+          }
+        }
+
+        .basket__modal-creditcard-name {
+          position: absolute;
+          top: 230px;
+          left: 20px;
+          font-size: 1.6rem;
+          color: lightgrey;
+          letter-spacing: -2px;
+        }
+
+        .basket__modal-creditcard-date {
+          position: absolute;
+          top: 183px;
+          left: 336px;
+          width: 140px;
+          display: flex;
+          flex-direction: column;
+
+          & > div {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+
+            #form_date_valid {
+              margin-left: 4px;
+            }
+          }
+
+          input {
+            width: 30px;
+            height: 28px;
+            font-size: 20px;
+            border-radius: 5px;
+            padding-left: 5px;
+            margin: 5px 6px;
+            background-color: #ececec;
+            color: grey;
+          }
+          input::placeholder {
+            font-size: 16px;
+            padding: 30px 5px;
+            color: lightgray;
+          }
+
+          #form_cvv {
+            width: 75px;
+          }
+        }
+      }
+    }
+
+    .basket__modal-control {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 60%;
+      margin-top: 10px;
+
+      button {
+        width: 120%;
+        height: 50px;
+        border-radius: 15px;
+        line-height: 50px;
+        color: aliceblue;
+        // box-shadow: inset 0 0 5px 2px black;
+        background: rgb(77, 77, 77);
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 5px 20px;
+
+        &:hover {
+          color: gold;
+        }
+
+        &::after {
+          top: -52px;
+        }
+
+        &:disabled {
+          opacity: 0.4;
+          cursor: auto;
+        }
+      }
+    }
+
+    #conf {
+      visibility: hidden;
+
+      h3 {
+        color: lime;
+        text-shadow: 1px 1px 2px black, 0 0 1em rgb(5, 5, 5),
+          0 0 0.2em rgb(8, 8, 8);
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../media/icon/logo_ simple.png" />
+    <title>Online shop</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <a class="route header__nav-point" href="/">
+          <h1 class="header__nav-point logo"></h1>
+        </a>
+        <p class="basketPrice">Basket price: <span id="header_price">0 ₴</span></p>
+        <a class="route header__nav-point" href="/basket">
+          <div>
+            <div class="baskBtn"><b id="header_items">0</b></div>
+          </div>
+        </a>
+      </nav>
+      <div id="main-page"></div>
+    </header>
+    <main class="main">
+      <!--main page-->
+      <div class="main-template" id="temp_home">
+        <div class="main__filter">
+          <section class="main__filter-panel">
+            <!-- <p>filters</p> -->
+            <br />
+            <ul class="filtersList">
+              <li class="filtersItem">
+                <input id="search" type="text" placeholder="search product" />
+                <br />
+                <br />
+                <!-- </li>
+                            <li> -->
+                <select id="sort" aria-placeholder="">
+                  <option value="" selected>Sort by</option>
+                  <option value="priceAsc">Sort by price ASC</option>
+                  <option value="priceDesc">Sort by price DESC</option>
+                  <option value="ratingAsc">Sort by rating ASC</option>
+                  <option value="ratingDesc">Sort by rating DESC</option>
+                  <option value="nameAsc">Sort by name ASC</option>
+                  <option value="nameDesc">Sort by name DESC</option>
+                </select>
+                <br />
+                <br />
+                <select id = "viewType">
+                  <option value="tiles" selected>Tiles</option>
+                  <option value="list">List</option>
+                </select>
+              </li>
+              <li class="filtersItem">
+                <div class="categoryFilterButton filButton">
+                  Filter by Category:
+                </div>
+                <ul class="main__filter-cat-list" id="filter_by_cat">
+                  <!--fill in the MainHandler->drawFilterList()-->
+                </ul>
+                <br />
+              </li>
+              <li class="filtersItem">
+                <div class="brandFilterButton filButton">Filter by Brand:</div>
+                <ul class="main__filter-brand-list" id="filter_by_brand">
+                  <!--fill in the MainHandler->drawFilterList()-->
+                </ul>
+                <br />
+              </li>
+              <li class="filtersItem">
+                <span class="multi-range-price">
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="5"
+                    id="lowerPrice"
+                  />
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="45"
+                    id="upperPrice"
+                  />
+                </span>
+                <br />
+                <br />
+                <p class="main__price-count">
+                  Price: <span id="price-from">0</span> /
+                  <span id="price-to">0</span>
+                </p>
+                <!-- </li>
+              <li> -->
+                <span class="multi-range-stock">
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="5"
+                    id="lowerStock"
+                  />
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="45"
+                    id="upperStock"
+                  />
+                </span>
+                <br />
+                <br />
+                <p class="main__stock-count">
+                  Stock: <span id="stock-from">0</span> /
+                  <span id="stock-to">0</span>
+                </p>
+              </li>
+              <!-- <li></li>
+              <li></li> -->
+            </ul>
+            <div class="filtersButtonSect">
+              <button class="filterButton" id="copy" disabled>Copy</button>
+              <p class="main__items-sum">Items found: <b id="main_items_sum">0</b></p>
+              <button class="filterButton" id="reset">Reset</button>
+            </div>
+          </section>
+          <section class="main__filter-slider"></section>
+          <article class="main__filter-body" id="main__filter-body">
+            <!--fill in the MainHandler->drawSortedList()-->
+          </article>
+        </div>
+      </div>
+
+      <!--404 page-->
+      <div class="main-template" id="temp_404">
+        <div class="main404">
+          <div class="block404">
+            <img class="img404" src="https://raw.githubusercontent.com/Sedric14/assets/main/online-shop/404_illustration.webp" alt="404 illustration">
+            <h1>404</h1>
+            <p class="text404">It looks like your ball of Ariadne fell into playful paws</p>
+            <div class="ups404 btnOne">Oops!</div>
+          </div>
+          
+        </div>
+      </div>
+
+      <!--product page-->
+      <div class="main-template" id="temp_product">
+        <!--fill in the ProductHandler-->
+      </div>
+
+      <!--basket page-->
+      <div class="main-template" id="temp_basket">
+        <div class="basket" id="basket">
+          <article>
+            <div class="basket__panel">
+                <div class="basket__page">
+                  <div class="basket__page-control">
+                    <button class="btnOne" id="basket_page_prev">&lt;</button>
+                    <p class="basket__page-index">Page <span id="basket_page_cur">1</span> / <span id="basket_page_total">1</span></p>
+                    <button class="btnOne" id="basket_page_next">&gt;</button>
+                  </div>
+                  <select id="basket_limit" aria-placeholder="">
+                    <option value="0">Products on the page</option>
+                    <option value="3">3 products on the page</option>
+                    <option value="5">5 products on the page</option>
+                    <option value="10">10 products on the page</option>
+                  </select>
+                </div>
+
+                <div class="basket__prices">
+                  <p><span id="basket_total_price"></span> <b id="basket_items"></b></p>
+                  <p><span id="basket_discount_price"></span> <b id="basket_items2"></b></p>
+                </div>
+                <div class="basket__disc">
+                  <div id="basket_discount_list">
+                  </div>
+                  <div class="basket__disc-add">
+                    <input id="basket_disc_input" type="text" placeholder="discount: test05, test10, test20"/>
+                    <button class="btnOne" id="basket_add_disc">Add</button>
+                  </div>
+                </div>
+                <div class="basket__control_btns">
+                  <button class="btnOne" id="basket_page_reset">Reset all</button>
+                  <button class="btnOne" id="basket_send">Send an order</button>
+                </div>
+            </div>
+            <div class="basket__list" id="basket_list">
+
+            </div>
+          </article>
+        </div>
+
+        <div class="basket__modal" id="basket_modal">
+          <div class="basket__modal-form">
+            <h4>Personal details:</h4>
+            <br/>
+            <div class="basket__modal-pers">
+              <div class="basket__modal-pers-list">
+                <input type="text" id="form_name" placeholder="Name Firstname">
+                <p id="form_name_status" class="modal__form"></p>
+              </div>
+              <div class="basket__modal-pers-list">
+                <input type="text" id="form_address" placeholder="Delivery address">
+                <p id="form_address_status" class="modal__form"></p>
+              </div>
+
+              <div class="basket__modal-pers-list">
+                <input type="tel" id="form_tel" placeholder="Phone">
+                <p id="form_tel_status" class="modal__form"></p>
+              </div>
+              <div class="basket__modal-pers-list">
+                <input type="email" id="form_email" placeholder="Email">
+                <p id="form_email_status" class="modal__form"></p>
+              </div>
+            </div>
+            <br/>
+            <div class="creditCardBlock">
+              <div class="cardBack"></div>
+              <div class="basket__modal-creditcard">
+                <div class="basket__modal-card-logo">
+                  <img id="card_express" src="../media/image/express.png" alt="express">
+                  <img id="card_master" class="hide" src="../media/image/mastercard.png" alt="mastercard">
+                  <img id="card_visa" class="hide" src="../media/image/visa.png" alt="visa">
+                </div>
+                <div class="basket__modal-creditcard-num">
+                  <input id="card_num1" type="number" placeholder="xxxx">
+                  -
+                  <input id="card_num2" type="number" placeholder="xxxx">
+                  -
+                  <input id="card_num3" type="number" placeholder="xxxx">
+                  -
+                  <input id="card_num4" type="number" placeholder="xxxx">
+                  <p id="form_card_valid"></p>
+                </div>
+                <p class="basket__modal-creditcard-name" id="form_name_show"></p>
+                <div class="basket__modal-creditcard-date">
+                  <div>
+                    <input id="form_month" type="number" placeholder="M">
+                    <input id="form_year" type="number" placeholder="Y">
+                    <p id="form_date_valid"></p>
+                  </div>
+                  <div>
+                    <input id="form_cvv" type="number" placeholder="CVV">
+                    <p id="form_cvv_valid"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="basket__modal-control">
+              <button class="basket__cancel_btn btnOne">Cancel</button>
+              <button class="btnOne" id="form_confirm" disabled>Confirm and send</button>
+            </div>
+            <div id="conf">
+              <h3>Order was confirmed successfully. Redirect to main page after....<span id="conf_sec">3</span> sec</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <a href="https://github.com/Sedric14/"><div class="gitLogo"></div></a>
+        <h2 class = "year">2022</h2>
+        <a href="https://rs.school/js/"><div class="rssLogo"></div></a>
+      </div>
+    </footer>
+  </body>
+</html>

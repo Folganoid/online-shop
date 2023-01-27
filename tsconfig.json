@@ -1,0 +1,19 @@
+{
+     "compilerOptions": {
+      "types": ["jest"],
+      "lib": ["DOM", "ES2022", "DOM.Iterable"],
+      "strict": true,
+      "alwaysStrict": true,
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "strictPropertyInitialization": true,
+      "strictFunctionTypes": true,
+      "noImplicitThis": true,
+      "strictBindCallApply": true,
+      "sourceMap": true,
+      "target": "ES2022",
+      "module": "commonjs",
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+    },
+}

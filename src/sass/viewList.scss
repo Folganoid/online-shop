@@ -1,0 +1,190 @@
+
+.cardList {
+  border-radius: 1vw;
+  width: 85%;
+  height: 25vh;
+  position: relative;
+  margin: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: rgb(236, 236, 236);
+  box-shadow: 0 0 15px rgb(0, 0, 0);
+  transition: 500ms;
+  &:hover{
+    transform: scale(1.05) translateY(-2.5%);
+
+    .buy
+    {
+      transform: translatey(-60px);
+    }
+  }
+
+  .buy,
+  .bought {
+    position: absolute;
+    z-index: 1;
+    bottom: -40px;
+    left: calc(45% - 60px);
+    width: 120px;
+    height: 30px;
+    border-radius: 35px;
+    background-color: rgb(120, 119, 119);
+    color: red;
+          font-family: sans-serif;
+          font-weight: 600;
+          box-shadow: inset 0 -2px 2px 0 black, inset 0 2px 2px 0 white;
+          text-shadow: 1px 1px 2px black, 0 0 1em black,
+            0 0 0.2em black;
+          font-size: larger;
+          line-height: 30px;
+          text-align: center;
+          transition: 500ms;
+
+          &:active{
+            box-shadow: inset 0 -1px 3px 0 black, inset 0 1px 3px 0 rgb(122, 121, 121);
+            color: rgb(194, 193, 193);
+          }
+
+          &::after{
+            display: block;
+            content: "";
+            position: relative;
+            top: -32px;
+            left: -2px;
+            height: 34px;
+            width: 124px;
+            box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+            border-radius: 17px;
+          }
+  }
+
+  .bought{
+    background-color: rgb(167, 167, 167);
+    color: goldenrod;
+    box-shadow: inset 0 -2px 2px 0 black, inset 0 2px 2px 0 white;
+    text-shadow: 1px 1px 2px black, 0 0 1em black,
+      0 0 0.2em black;
+    transform: translateY(-60px);
+  }
+
+  .imgWrapper {
+    background-color: rgb(161, 161, 161);
+    width: 35vh;
+    height: 23vh;
+    position: relative;
+    left: 5%;
+    top: 10px;
+    border-radius: 10px;
+    box-shadow: inset 0 -2px 3px 0 black, inset 0 2px 3px 0 white;
+
+    &::after {
+      display: block;
+      content: "";
+      position: relative;
+      box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+      border-radius: calc((1.5em + 4px) / 2);
+      left: -2px;
+      top: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+    }
+
+    .cardImg {
+      border-radius: 0.5vw;
+      position: absolute;
+      top: 0%;
+      left: 15%;
+      height: 100%;
+      z-index: 0;
+      background-size: cover;
+      
+    }
+  }
+
+  .cardTitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 2.5em;
+    white-space: nowrap;
+    width: 30%;
+    height: 2.5em;
+    position: absolute;
+    top: 5%;
+    left: calc(5% + 35vh + 20px);
+    padding-left: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+    color: gold;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 1.5em 1.5em 0;
+    box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+          text-shadow: 1px 1px 2px black, 0 0 1em black,
+            0 0 0.2em black;
+            font-size: 120%;
+  }
+
+  .brandName {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: goldenrod;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    right: 10%;
+    text-align: end;
+    top: calc(20% + 3em);
+    width: 30%;
+    height: 1.8em;
+    font-size: small;
+    line-height: 1.5em;
+    padding-right: 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1.5em 0 0 1.5em;
+    z-index: 1;
+    box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+    text-shadow: 1px 1px 2px black, 0 0 1em black,
+      0 0 0.2em black;
+  }
+
+  .price {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 70px;
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(120, 119, 119);
+    color: gold;
+    font-family: sans-serif;
+    font-weight: 600;
+    box-shadow: inset 0 -2px 4px 0 black, inset 0 2px 2px 0 white;
+    text-shadow: 1px 1px 2px black, 0 0 1em black,
+      0 0 0.2em black;
+    font-size: larger;
+
+    &:active{
+      box-shadow: inset 0 -1px 3px 0 black, inset 0 1px 3px 0 rgb(122, 121, 121);
+      color: rgb(194, 193, 193);
+    }
+
+    &::after{
+      display: block;
+      content: "";
+      position: relative;
+      top: -72px;
+      left: -2px;
+      height: 74px;
+      width: 74px;
+      box-shadow: inset 0 2px 2px 0 black, inset 0 -2px 2px 0 white;
+      background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.586));
+      border-radius: 37px;
+    }
+  }
+
+  .stock {
+    position: absolute;
+    z-index: 1;
+  }
+}
